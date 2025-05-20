@@ -14,7 +14,7 @@ import model from "./assets/model.png";
 import velosiped from './assets/velosiped.png'
 import main_background1 from './assets/main_background1.png'
 import main_background2 from './assets/main_background2.png'
-
+import section1 from './assets/section1.png'
 function Home() {
   return (
     <div className="w-[100%] flex flex-col items-center justify-center gap-[50px]">
@@ -122,7 +122,7 @@ function Home() {
             <p className="text-[12px] font-[500]">Beauty & Accesories</p>
           </div>
         </div>
-        <div className="flex items-center justify-center gap-[45px]">
+        <div className="p-[20px] rounded-[20px] bg-[#F2F0F0] flex items-center justify-center gap-[45px]">
           <div className="flex flex-col items-center justify-between gap-[60px]">
             <div className="">
               <img src={main_background1} alt="" draggable='false' />
@@ -150,6 +150,15 @@ function Home() {
               <img src={velosiped} alt="" draggable='false'/>
             </div>
           </div>
+        </div>
+        <div className="flex flex-col items-center justify-center gap-[25px]">
+          <p className="text-[34px] font-[700] w-[100%]">
+            Feature Product
+          </p>
+          <div className="flex items-center justify-center w-[100%]">
+            <img src={section1} alt="" draggable='false'/>
+          </div>
+          <div className=""></div>
         </div>
       </main>
     </div>
