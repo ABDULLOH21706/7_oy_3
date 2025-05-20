@@ -4,6 +4,16 @@ import menu from "./assets/menu.png";
 import search from "./assets/search.png";
 import cart from "./assets/cart.png";
 import profile from "./assets/profile.png";
+import star from "./assets/star.svg";
+import star2 from "./assets/star2.png";
+import mobile from "./assets/mobile.png";
+import home from "./assets/home.png";
+import electronics from "./assets/electronics.png";
+import fashion from "./assets/fashion.png";
+import model from "./assets/model.png";
+import velosiped from './assets/velosiped.png'
+import main_background1 from './assets/main_background1.png'
+import main_background2 from './assets/main_background2.png'
 
 function Home() {
   return (
@@ -67,8 +77,80 @@ function Home() {
           </div>
         </div>
       </header>
-      <main>
-        
+      <main className="flex flex-col items-center justify-center gap-[50px] w-[70%]">
+        <div className="flex item-center justify-between w-[100%]">
+          <div className="flex items-center justify-center gap-[7px] pl-[7px] pr-[7px] hover:border-[2px] hover:border-[#1A89DB] hover:border-b-[0px] hover:border-l-[0px] hover:border-r-[0px]">
+            <div className="w-[16px]">
+              <img src={star} alt="" draggable="false" />
+            </div>
+            <p className="text-[#1A89DB] text-[12px] font-[700]">Top Offers</p>
+          </div>
+          <div className="flex items-center justify-center gap-[7px] pl-[7px] pr-[7px] hover:border-[2px] hover:border-[#1A89DB] hover:border-b-[0px] hover:border-l-[0px] hover:border-r-[0px]">
+            <div className="w-[32px]">
+              <img src={star2} alt="" draggable="false" />
+            </div>
+            <p className="text-[12px] font-[500]">Grocery</p>
+          </div>
+          <div className="flex items-center justify-center gap-[7px] pl-[7px] pr-[7px] hover:border-[2px] hover:border-[#1A89DB] hover:border-b-[0px] hover:border-l-[0px] hover:border-r-[0px]">
+            <div className="w-[32px]">
+              <img src={mobile} alt="" draggable="false" />
+            </div>
+            <p className="text-[12px] font-[500]">Mobiles</p>
+          </div>
+          <div className="flex items-center justify-center gap-[7px] pl-[7px] pr-[7px] hover:border-[2px] hover:border-[#1A89DB] hover:border-b-[0px] hover:border-l-[0px] hover:border-r-[0px]">
+            <div className="w-[32px]">
+              <img src={home} alt="" draggable="false" />
+            </div>
+            <p className="text-[12px] font-[500]">Home</p>
+          </div>
+          <div className="flex items-center justify-center gap-[7px] pl-[7px] pr-[7px] hover:border-[2px] hover:border-[#1A89DB] hover:border-b-[0px] hover:border-l-[0px] hover:border-r-[0px]">
+            <div className="w-[32px]">
+              <img src={electronics} alt="" draggable="false" />
+            </div>
+            <p className="text-[12px] font-[500]">Electronics</p>
+          </div>
+          <div className="flex items-center justify-center gap-[7px] pl-[7px] pr-[7px] hover:border-[2px] hover:border-[#1A89DB] hover:border-b-[0px] hover:border-l-[0px] hover:border-r-[0px]">
+            <div className="w-[32px]">
+              <img src={fashion} alt="" draggable="false" />
+            </div>
+            <p className="text-[12px] font-[500]">Fashion</p>
+          </div>
+          <div className="flex items-center justify-center gap-[7px] pl-[7px] pr-[7px] hover:border-[2px] hover:border-[#1A89DB] hover:border-b-[0px] hover:border-l-[0px] hover:border-r-[0px]">
+            <div className="w-[32px]">
+              <img src={model} alt="" draggable="false" />
+            </div>
+            <p className="text-[12px] font-[500]">Beauty & Accesories</p>
+          </div>
+        </div>
+        <div className="flex items-center justify-center gap-[45px]">
+          <div className="flex flex-col items-center justify-between gap-[60px]">
+            <div className="">
+              <img src={main_background1} alt="" draggable='false' />
+            </div>
+            <div className="">
+              <img src={main_background2} alt="" draggable='false' />
+            </div>
+          </div>
+          <div className="flex flex-col items-center justify-center p-[30px] pt-[50px] rounded-[10px] w-[700px] bg-[#FFE1E3]">
+            <div className="flex flex-col items-start justify-center gap-[13px]">
+              <p className="text-[36px] font-[700]">Lifelong Tribe 20T</p>
+              <p className="text-[14px] text-[#6F6F6F] font-[500]">
+                Matte Black And Fluorescent yellow 20 T Road Cycle (Single
+                Speed, Black
+              </p>
+              <p className="text-[14px] text-[#6F6F6F] font-[500] pl-[20px]">
+                ₹5,000 From{" "}
+                <span className="text-[#000000] font-[700]">₹2,000*</span>
+              </p>
+              <button className="flex items-center justify-center ml-[20px] text-white bg-[#FF0000] h-[22px] rounded-[20px] pl-[29px] pr-[29px]">
+                Buy Now
+              </button>
+            </div>
+            <div className="w-[580px]">
+              <img src={velosiped} alt="" draggable='false'/>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   );
