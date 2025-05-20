@@ -17,6 +17,7 @@ import main_background2 from './assets/main_background2.png'
 import section1 from './assets/section1.png'
 import section2_1 from './assets/section2_1.png'
 import section2_2 from './assets/section2_2.png'
+import section3_1 from './assets/section3_1.png'
 
 function Home() {
   return (
@@ -80,7 +81,7 @@ function Home() {
           </div>
         </div>
       </header>
-      <main className="flex flex-col items-center justify-center gap-[50px] w-[70%]">
+      <main className="flex flex-col items-center justify-center gap-[50px] w-[70%] pb-[100px]">
         <div className="flex item-center justify-between w-[100%]">
           <div className="flex items-center justify-center gap-[7px] pl-[7px] pr-[7px] hover:border-[2px] hover:border-[#1A89DB] hover:border-b-[0px] hover:border-l-[0px] hover:border-r-[0px]">
             <div className="w-[16px]">
@@ -171,6 +172,14 @@ function Home() {
             <div className="h-[100%]">
               <img src={section2_2} alt="" draggable='false'/>
             </div>
+          </div>
+          <p className="text-[34px] font-[700] w-[100%]">
+            Shop By Categories
+          </p>
+          <div className="flex items-center justify-start w-[100%] gap-[10px]">
+              <div className="w-[100%] h-[400px]">
+                <img src={section3_1} alt="" draggable='false'/>
+              </div>
           </div>
         </div>
       </main>
