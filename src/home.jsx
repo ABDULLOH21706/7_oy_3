@@ -15,6 +15,9 @@ import velosiped from './assets/velosiped.png'
 import main_background1 from './assets/main_background1.png'
 import main_background2 from './assets/main_background2.png'
 import section1 from './assets/section1.png'
+import section2_1 from './assets/section2_1.png'
+import section2_2 from './assets/section2_2.png'
+
 function Home() {
   return (
     <div className="w-[100%] flex flex-col items-center justify-center gap-[50px]">
@@ -158,7 +161,17 @@ function Home() {
           <div className="flex items-center justify-center w-[100%]">
             <img src={section1} alt="" draggable='false'/>
           </div>
-          <div className=""></div>
+          <p className="text-[34px] font-[700] w-[100%]">
+            Last View Products
+          </p>
+          <div className="flex items-center justify-center gap-[20px]">
+            <div className="h-[100%]">
+              <img src={section2_1} alt="" draggable='false'/>
+            </div>
+            <div className="h-[100%]">
+              <img src={section2_2} alt="" draggable='false'/>
+            </div>
+          </div>
         </div>
       </main>
     </div>
